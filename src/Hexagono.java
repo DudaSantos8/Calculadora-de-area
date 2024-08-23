@@ -6,6 +6,9 @@ public class Hexagono extends FormasGeometricas implements CalculadoraDeArea{
 
     @Override
     public double calcularArea(double primeiraMedida, double segundaMedida) {
-        return 0;
+        double primeiroCalculo = ((primeiraMedida * primeiraMedida) * Math.sqrt(3));
+        double segundoCalculo = primeiroCalculo*6;
+        double resultado = segundoCalculo/4;
+        return  resultado;
     }
 }

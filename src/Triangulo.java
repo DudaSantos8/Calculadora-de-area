@@ -6,6 +6,7 @@ public class Triangulo extends FormasGeometricas implements CalculadoraDeArea{
 
     @Override
     public double calcularArea(double primeiraMedida, double segundaMedida) {
-        return 0;
+        double resultado = (primeiraMedida * segundaMedida)/2;
+        return resultado;
     }
 }
