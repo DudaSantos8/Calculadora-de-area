@@ -1,8 +1,4 @@
-public class Triangulo extends FormasGeometricas implements CalculadoraDeArea{
-
-    public Triangulo(double lados) {
-        super(lados);
-    }
+public class Triangulo implements CalculadoraDeArea{
 
     @Override
     public double calcularArea(double primeiraMedida, double segundaMedida) {

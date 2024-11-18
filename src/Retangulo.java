@@ -1,8 +1,4 @@
-public class Retangulo extends FormasGeometricas implements CalculadoraDeArea{
-
-    public Retangulo(double lados) {
-        super(lados);
-    }
+public class Retangulo implements CalculadoraDeArea{
 
     @Override
     public double calcularArea(double primeiraMedida, double segundaMedida) {

@@ -3,36 +3,49 @@ import java.text.DecimalFormat;
 public class ExecuteSystem {
 
     public static void runExecute(){
-        DecimalFormat limitarCasasDecimais = new DecimalFormat("0.00");
-        boolean control = true;
-        double pedirPrimeiraMedida = 0;
-        double pedirSegundaMedida = 0;
+        int control = 0;
+        double medida1 = 0;
+        double medida2 = 0;
         CalculadoraDeArea calculadoraDeArea = null;
 
-        while (control){
+        while (control == 0){
             int opcao = IO.menu();
             if (opcao == 1){
-                pedirPrimeiraMedida = IO.scanner("Digite a medida do lado do quadrado:").nextDouble();
-                pedirSegundaMedida = pedirPrimeiraMedida;
-                calculadoraDeArea = new Quadrado(4);
+                System.out.println("Insira abaixo a medida do lado do quadrado");
+                medida1 = retornarMedida1();
+                medida2 = medida1;
+                calculadoraDeArea = new Quadrado();
             } else if (opcao == 2) {
-                pedirPrimeiraMedida = IO.scanner("Digite a medida da base do retângulo:").nextDouble();
-                pedirSegundaMedida = IO.scanner("Digite a medida da altura do retângulo:").nextDouble();
-                calculadoraDeArea = new Retangulo(4);
+                System.out.println("Insira abaixo a largura e altura do retangulo");
+                medida1 = retornarMedida1();
+                medida2 = retornarMedida2();
+                calculadoraDeArea = new Retangulo();
             } else if (opcao == 3) {
-                pedirPrimeiraMedida = IO.scanner("Digite a medida da base do triângulo:").nextDouble();
-                pedirSegundaMedida = IO.scanner("Digite a medida da altura do triângulo:").nextDouble();
-                calculadoraDeArea = new Triangulo(3);
+                System.out.println("Insira abaixo a altura e a base do triangulo");
+                medida1 = retornarMedida1();
+                medida2 = retornarMedida2();
+                calculadoraDeArea = new Triangulo();
             } else if (opcao == 4) {
-                pedirPrimeiraMedida = IO.scanner("Digite a medida de um dos lados do hexágono:").nextDouble();
-                pedirSegundaMedida = pedirPrimeiraMedida;
-                calculadoraDeArea = new Hexagono(6);
-            } else if(opcao == 5) control = false;
-            else throw new RuntimeException("Opção invalida");
+                System.out.println("Insira abaixo um dos lados do hexagono");
+                medida1 = retornarMedida1();
+                medida2 = medida1;
+                calculadoraDeArea = new Hexagono();
+            }else if (opcao == 5) control = 1;
 
-            double calculo = calculadoraDeArea.calcularArea(pedirPrimeiraMedida, pedirSegundaMedida);
-            System.out.println(limitarCasasDecimais.format("A área dessa forma geométrica é: "+calculo));
+            assert calculadoraDeArea != null;
+            double calculo = calculadoraDeArea.calcularArea(medida1, medida2);
+            System.out.println("A área dessa forma geométrica é: "+calculo);
+
+
         }
+    }
+
+    private static double retornarMedida1(){
+        return IO.scanner("\nDigite a medida:").nextDouble();
+    }
+
+    private static double retornarMedida2(){
+        return IO.scanner("\nDigite a medida:").nextDouble();
     }
 
 }

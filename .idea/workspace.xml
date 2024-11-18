@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bea775c-afab-4a33-acc6-d40801e83891" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ExecuteSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Execute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Execute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExecuteSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExecuteSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormasGeometricas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hexagono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hexagono.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quadrado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quadrado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Retangulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Retangulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Triangulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Triangulo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +30,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2l4HDyB1UFzer0V5JW9Pxbzcp7m" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -41,6 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Zupper/Repositorios_git/CalculoDeArea",
     "onboarding.tips.debug.path": "C:/Users/Zupper/Repositorios_git/CalculoDeArea/src/Main.java"
   }
 }]]></component>
